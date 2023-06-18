@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Cart</title>
+        <link rel="stylesheet" href="style_CartCheckout2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <h2 id="headerpage">Your Cart</h2>
+            <hr>
+        <form action="/action.php">
+            <div id="cart-table">
+                <h3 id="pharmacy-name">Pharmacy Name</h3>
+                <table id="table-of-products">
+                    <thead>
+                      <tr>
+                        <th class="product-thumbnail">Image</th>
+                        <th class="product-name">Product</th>
+                        <th class="product-price">Price</th>
+                        <th class="product-quantity">Quantity</th>
+                        <th class="product-sub">Subtotal</th>
+                        <th class="product-remove">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="product-thumbnail">
+                          <img src="D:\Documents\HTML CAPSTONE\images\neozep10.jpg" alt="Image" class="product-pic">
+                        </td>
+                        <td class="product-name">Neozep</td>
+                        <td class="product-price">P55.00</td>
+                        <td class="product-quan">
+                          <div class="up-down-numbers">
+                              <button class="control-number down" type="button">&minus;</button>
+                              <input type="text" inputmode="numeric" class="number-field">
+                              <button class="control-number up" type="button">&plus;</button>
+                            </div>
+                        </td>
+                        <td class="product-sub">P55.00</td>
+                        <td class="product-remove"><button type="button" class="remove">Delete</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="label-input-holder">
+                <label for="product-prescription" id="for-presc">Upload your prescription here: </label>
+                <div id="prescription-function">
+                    <input type="file" id="product-prescription" accept=".doc, .pdf, image/jpg, image/jpeg, image/png">
+                </div>
+            </div>
+            <div id="product-total">
+                <div id="total-portion">
+                    <label for="price" id="total">Total: </label>
+                    <input type="text" id="price">
+                </div>
+                <div id="product-checkout">
+                    <button type="submit" id="submit-checkout">Checkout</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
