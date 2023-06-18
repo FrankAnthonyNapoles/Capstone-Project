@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Product Card | Pharmacy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Productcard_V2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+        <div id="header"></div>
+        <div id="main-box">
+            <div id="product-side">
+                <img id="med-pic" src="D:\Documents\HTML CAPSTONE\images\avatar-f.jpg" alt="Bioderm">
+                <p id="prescription-required">Prescription Required</p>
+            </div>
+
+            <div id="description-side">
+                <h2 id="product-name">Bioderm Cream</h2> 
+                <p id="price" class="textile">PHP50.00</p>
+                <form action="/action.php">
+                    <label for="quantity" class="label-for">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="20">
+                </form>
+                <div id="button-function">
+                    <a href="pharmacy-edititem.html" id="edititem" class="buttondapat">Edit Item</a>
+                    <button id="outofstock" class="buttondapat">Mark as Out of Stock</button>
+                </div>
+            </div>
+        </div>
+	<div id="product-desc">
+            <p id="info" class="textile">Information</p> 
+            <p class="info-med">Polymyxin B sulfate - bacitracin zinc is a combination of antibiotics
+                used to treat certain types of infections caused by bacteria. The topical ointment can be used
+                to treat certain skin infections such as infected wounds, burns, skin grafts, boils, and acne.
+                The eye ointment is used to treat some types of eye infections such as conjunctivitis.
+                All preparations work by killing the bacteria that cause these infections.</p>
+        </div>
+        <div id="go-back">
+            <a href = "pharmacy_viewprofile.html" id="go-back-button">Go Back</a>
+        </div>
+	</body>
+</html>

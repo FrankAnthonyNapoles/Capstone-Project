@@ -1,0 +1,202 @@
+:root {
+    --coolor1: #3FBFDA;
+    --coolor2: #fc8e33;
+    --coolor3: #11333A;
+    --coolor4: #F0F0F0;
+    --coolor5: #91E7BB;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:not(i) {
+    font-family: 'Rubik', sans-serif;
+}
+#main-box {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+#header {
+    width: 100%;
+    height: 9em;
+    background: linear-gradient(120deg,
+    var(--coolor3) 0%,
+    var(--coolor5) 49%,
+    var(--coolor1) 100%
+    );
+}
+#med-pic {
+    width: 100%;
+    object-fit: cover;
+}
+#prescription-required {
+    position: relative;
+    top: -3em;
+    left: 12em;
+    padding: 0.5em 0.9em;
+    background-color: var(--coolor3);
+    width: 200px;
+    color: white;
+}
+#product-side {
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+}
+#description-side {
+    margin-left: 2em;
+    width: 50%;
+}
+#product-name {
+    font-size: 2em;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 0px 3px var(--coolor2);
+}
+.textile {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#info {
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+}
+#price {
+    color: var(--coolor1);
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
+}
+.info-med {
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+#product-desc {
+    width: 75%;
+    margin: 1em auto 3em auto;
+}
+.label-for {
+    font-weight: 300;
+}
+#quantity {
+    padding: 0.2em;
+    font-weight: 300;
+    width: 10%;
+}
+#button-function {
+    margin-top: 2em;
+}
+#edititem {
+    text-decoration: none;
+    color: black;
+    background-color: var(--coolor1);
+}
+#edititem:hover, #outofstock:hover{
+    opacity: 0.8;
+}
+#outofstock {
+    background-color: var(--coolor2);
+    margin-left: 0.8em;
+    cursor: pointer;
+}
+.buttondapat {
+    font-size: 1em;
+    border: none;
+    padding: 0.5em 1.2em;
+    border-radius: 10px;
+}
+#go-back {
+    margin: 5em;
+    text-align: center;
+}
+#go-back-button {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding: 0.9em 1.5em;
+    background-color: var(--coolor2);
+    border-radius: 10px;
+}
+#go-back-button:hover {
+    background-color: var(--coolor3);
+    color: var(--coolor2);
+    transition: ease-in-out .3s all;
+}
+@media (max-width: 950px) {
+    #prescription-required {
+        font-size: 0.8em;
+        top: -3em;
+        left: 15em;
+        padding: 0.5em;
+        width: 150px;
+    }
+    #product-side {
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 850px) {
+    #product-side {
+        height: 300px;
+        width: 300px;
+    }
+    #description-side {
+        width: 40%;
+    }
+    .info-med {
+        line-height: 1.2;
+        font-size: 0.8em;
+        margin-bottom: 1.5em;
+    }
+}
+@media (max-width: 640px) {
+    #main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    #description-side {
+        width: 70%;
+        margin: 1em auto;
+    }
+    .buttondapat {
+        font-size: 0.8em;
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    #edititem {
+        width: 100px;
+    }
+    #outofstock {
+        margin-left: 0;
+    }
+    #go-back {
+        margin: 2em;
+    }
+    #go-back-button {
+        font-size: 0.9em;
+        padding: 0.5em 1.2em;
+    }
+}
+@media (max-width: 400px) {
+    #product-side {
+        height: 200px;
+        width: 200px;
+    }
+    #prescription-required {
+        font-size: 0.6em;
+        top: -3em;
+        left: 8em;
+        width: 115px;
+    }
+    #product-name {
+        font-size: 1.4em;
+    }
+    .textile {
+        font-size: 1em;
+    }
+    #quantity {
+        width: 20%;
+    }
+}
